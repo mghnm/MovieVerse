@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="movieversePU" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/movieverseDataSource</jta-data-source>
+    <class>com.movieverse.entities.Category</class>
+    <class>com.movieverse.entities.Product</class>
+    <class>com.movieverse.entities.CustomerOrder</class>
+    <class>com.movieverse.entities.Person</class>
+    <class>com.movieverse.entities.OrderStatus</class>
+    <class>com.movieverse.entities.OrderDetail</class>
+    <class>com.movieverse.entities.Groups</class>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+      <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+      <property name="hibernate.temp.use_jdbc_metadata_defaults" value="true"/>
+      <property name="hibernate.search.default.directory_provider" value="filesystem"/>
+      <property name="hibernate.search.default.indexBase" value="/data/index/default"/>
+    </properties>
+  </persistence-unit>
+</persistence>

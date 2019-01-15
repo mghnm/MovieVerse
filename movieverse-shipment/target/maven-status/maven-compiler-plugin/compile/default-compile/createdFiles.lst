@@ -1,0 +1,10 @@
+com\movieverse\movieverse\shipment\web\UserController.class
+com\movieverse\movieverse\qualifiers\LoggedIn.class
+com\movieverse\movieverse\shipment\web\LocaleBean.class
+com\movieverse\movieverse\shipment\ejb\OrderBrowser.class
+com\movieverse\movieverse\shipment\web\ShippingBean.class
+com\movieverse\movieverse\shipment\web\ShippingBean$Status.class
+com\movieverse\movieverse\shipment\web\ShippingBean$1.class
+com\movieverse\movieverse\shipment\session\AbstractFacade.class
+com\movieverse\movieverse\shipment\session\UserBean.class
+com\movieverse\movieverse\shipment\web\util\JsfUtil.class
